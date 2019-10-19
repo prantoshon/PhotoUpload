@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComplainAddModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Complain Type" Type="varchar" MaxLength="50" />
+    <Property Name="Complain Area" Type="varchar" MaxLength="50" />
+    <Property Name="Road Number" Type="varchar" MaxLength="50" />
+    <Property Name="Complain Details" Type="varchar(max)" />
+    <Property Name="Compailer Name" Type="varchar" MaxLength="50" />
+    <Property Name="Cotract Number" Type="varchar" MaxLength="11" />
+    <Property Name="Email" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityContainer Name="ComplainAddModelStoreContainer">
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

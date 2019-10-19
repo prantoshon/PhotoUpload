@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ComplainAddModelStoreContainer" CdmEntityContainer="ComplainAddEntities">
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="ComplainAddModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Complain_Type" ColumnName="Complain Type" />
+          <ScalarProperty Name="Complain_Area" ColumnName="Complain Area" />
+          <ScalarProperty Name="Road_Number" ColumnName="Road Number" />
+          <ScalarProperty Name="Complain_Details" ColumnName="Complain Details" />
+          <ScalarProperty Name="Compailer_Name" ColumnName="Compailer Name" />
+          <ScalarProperty Name="Cotract_Number" ColumnName="Cotract Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
